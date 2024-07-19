@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baterías Acústicas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .back-button {
+            background-color: #f2f2f2;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: black;
+            border-radius: 10px;
+        }
+        .back-button:hover {
+            background-color: #ddd;
+        }
+        .brand {
+            text-align: center;
+            margin: 20px 0;
+            background-color: #e0e0e0;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .products-row {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .product {
+            flex: 0 1 45%;
+            margin: 10px;
+            text-align: center;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .product img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .offer {
+            position: relative;
+        }
+        .offer::after {
+            content: "OFERTÓN!!!";
+            position: absolute;
+            top: 10px;
+            left: -20px;
+            background-color: red;
+            color: white;
+            padding: 5px;
+            transform: rotate(-20deg);
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body style="background-color: #d0d1d2;">
+    <div class="header">
+        <h1>Saxofones Profesionales</h1>
+        <a href="productos.html" class="back-button">Regresar</a>
+    </div>
+
+    <div class="brand">YAMAHA</div>
+    <div class="products-row">
+        <div class="product">
+            <img src="img//saxo1.jpeg" alt="Yamaha Drum Set">
+            <p>Precio: s/2.500</p>
+        </div>
+        <div class="product">
+            <img src="img//saxo2.jpeg" alt="Yamaha Drum Set" width="100%">
+            <p>Precio: s/3.700</p>
+        </div>
+    </div>
+    <h2><b>Trompetas Profesionales</b></h2>
+    <div class="brand">Yamaha</div>
+    <div class="products-row">
+        <div class="product offer">
+            <img src="img//trompeta1.jpeg" alt="PDP Drum Set">
+            <p>Precio: s/1.300<br>Precio regular: s/1.900</p>
+        </div>
+        <div class="product">
+            <img src="img/trompeta2.jpeg" alt="PDP Drum Set">
+            <p>Precio: s/4.500</p>
+        </div>
+    </div>
+</body>
+</html>
